@@ -1,0 +1,384 @@
+{
+  "description": "DUMMY message. Must be fixed when real data will be available.",
+  "typeId": "RBW150",
+  "moduleType": "Note",
+  "connection": {
+    "detail": {
+      "connection": "Connected",
+      "ipAddress": "127.0.0.1",
+      "fileTransferProtocol": "ftps"
+    }
+  },
+  "established": {
+    "detail": {
+      "versions": [
+        {
+          "name": "something",
+          "value": "1234"
+        }
+      ],
+      "peripherals": [
+        {
+          "name": "SamplePrinter",
+          "versions": [
+            {
+              "name": "PrinterFirmware",
+              "value": "v1.0.1"
+            },
+            {
+              "name": "PrinterSoftware",
+              "value": "v2.1"
+            }
+          ]
+        }
+      ],
+      "supportedMessages": {
+        "monitoring": [
+          "AssetStatusUpdated",
+          "VerifyStatusUpdated",
+          "InventoryChanged"
+        ],
+        "assetManagement": [
+          "RetrieveLog.Trace",
+          "RetrieveLog.Business",
+          "Reboot",
+          "SelfTest",
+          "DownloadPackage",
+          "Delete",
+          "DeleteAll",
+          "Install",
+          "Restart",
+          "RefreshEvents"
+        ]
+      },
+      "description": "I'm a RBW150",
+      "informations": [
+        {
+          "name": "CollectionUnitType",
+          "value": "Cassette"
+        },
+        {
+          "name": "SafeType",
+          "value": "UL"
+        },
+        {
+          "name": "BVType",
+          "value": "HVE-50"
+        }
+      ]
+    }
+  },
+  "assetStatusUpdated": {
+    "detail": {
+      "status": "Good",
+      "errorCode": "0x2100",
+      "errorMsg": "ERR_BV_FAN",
+      "errorDate": "2025-11-11T08:03:28+02:00",
+      "peripherals": [
+        {
+          "name": "the name of the peripheral",
+          "status": "Error",
+          "errorCode": "A001",
+          "errorMsg": "Something happens in this Asset",
+          "errorDate": "2021-02-15T21:03:28+02:00"
+        }
+      ],
+      "capabilities": {
+        "deposit": "available",
+        "dispense": "available",
+        "count": "available"
+      }
+    }
+  },
+  "partsStatusUpdated": {
+    "detail": {
+      "parts": [
+        {
+          "category": "door",
+          "items": [
+            {
+              "name": "COLLECTION_DOOR",
+              "state": "closed"
+            },
+            {
+              "name": "EXIT_COVER",
+              "state": "closed"
+            },
+            {
+              "name": "UPPER_UNIT",
+              "state": "closed"
+            },
+            {
+              "name": "LOWER_UNIT",
+              "state": "closed"
+            },
+            {
+              "name": "BOX1",
+              "state": "closed"
+            },
+            {
+              "name": "BOX2",
+              "state": "closed"
+            },
+            {
+              "name": "STAGE",
+              "state": "closed"
+            },
+            {
+              "name": "POUCH_UNIT_MAINTENANCE",
+              "state": "closed"
+            },
+            {
+              "name": "POUCH_UNIT_REMOVAL",
+              "state": "closed"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "inventoryChanged": {
+    "detail": {
+      "transactionId": "20180109121329E7082FC",
+      "processDate": "2021-04-17T19:53:37.760+02:00",
+      "deviceInformation": {
+        "deviceId": 123456,
+        "deviceType": "note",
+        "deviceName": "RBW150"
+      },
+      "totalInventory": [],
+      "paymentableInventory": [],
+      "cashUnits": [
+        {
+          "capacity": 300,
+          "denominations": [
+            {
+              "count": 30,
+              "currencyCode": "EUR",
+              "faceValue": "5",
+              "revision": 0
+            }
+          ],
+          "nearEmpty": 30,
+          "nearFull": 270,
+          "status": "nearEmpty",
+          "unit": "RSM1"
+        },
+        {
+          "capacity": 120,
+          "denominations": [
+            {
+              "count": 0,
+              "currencyCode": "EUR",
+              "faceValue": "10",
+              "revision": 0
+            }
+          ],
+          "nearEmpty": 12,
+          "nearFull": 108,
+          "status": "notAvailable",
+          "unit": "RSM2"
+        },
+        {
+          "capacity": 300,
+          "denominations": [
+            {
+              "count": 40,
+              "currencyCode": "EUR",
+              "faceValue": "20",
+              "revision": 0
+            }
+          ],
+          "nearEmpty": 30,
+          "nearFull": 270,
+          "status": "exist",
+          "unit": "RSM3"
+        },
+        {
+          "capacity": 110,
+          "denominations": [
+            {
+              "count": 30,
+              "currencyCode": "EUR",
+              "faceValue": "50",
+              "revision": 0
+            }
+          ],
+          "nearEmpty": 11,
+          "nearFull": 99,
+          "status": "exist",
+          "unit": "RSM4"
+        },
+        {
+          "capacity": 210,
+          "denominations": [
+            {
+              "count": 50,
+              "currencyCode": "EUR",
+              "faceValue": "100",
+              "revision": 0
+            }
+          ],
+          "nearEmpty": 21,
+          "nearFull": 189,
+          "status": "exist",
+          "unit": "RSM5"
+        },
+        {
+          "capacity": 300,
+          "denominations": [
+            {
+              "count": 0,
+              "currencyCode": "EUR",
+              "faceValue": "5",
+              "revision": 0
+            }
+          ],
+          "nearEmpty": 30,
+          "nearFull": 270,
+          "status": "empty",
+          "unit": "RSM6"
+        },
+        {
+          "capacity": 2000,
+          "denominations": [
+            {
+              "count": 0,
+              "currencyCode": "000",
+              "faceValue": "0",
+              "revision": 0
+            },
+            {
+              "count": 0,
+              "currencyCode": "EUR",
+              "faceValue": "5",
+              "revision": 0
+            },
+            {
+              "count": 40,
+              "currencyCode": "EUR",
+              "faceValue": "10",
+              "revision": 0
+            },
+            {
+              "count": 0,
+              "currencyCode": "EUR",
+              "faceValue": "20",
+              "revision": 0
+            },
+            {
+              "count": 0,
+              "currencyCode": "EUR",
+              "faceValue": "50",
+              "revision": 0
+            },
+            {
+              "count": 0,
+              "currencyCode": "EUR",
+              "faceValue": "100",
+              "revision": 0
+            },
+            {
+              "count": 40,
+              "currencyCode": "EUR",
+              "faceValue": "200",
+              "revision": 0
+            },
+            {
+              "count": 60,
+              "currencyCode": "EUR",
+              "faceValue": "500",
+              "revision": 0
+            }
+          ],
+          "nearEmpty": 0,
+          "nearFull": 2000,
+          "status": "exist",
+          "unit": "CollectionUnit"
+        },
+        {
+          "capacity": 30,
+          "denominations": [
+            {
+              "count": 0,
+              "currencyCode": "000",
+              "faceValue": "0",
+              "revision": 0
+            }
+          ],
+          "nearEmpty": 0,
+          "nearFull": 30,
+          "status": "empty",
+          "unit": "RejectBox1"
+        },
+        {
+          "capacity": 30,
+          "denominations": [
+            {
+              "count": 0,
+              "currencyCode": "000",
+              "faceValue": "0",
+              "revision": 0
+            }
+          ],
+          "nearEmpty": 0,
+          "nearFull": 30,
+          "status": "empty",
+          "unit": "RejectBox2"
+        }
+      ],
+      "peripherals": []
+    }
+  },
+  "firmwareUpdated": {
+    "detail": {
+      "package": [
+        "04.35.08_FullPckg for 2.02",
+        "04.35.08_MCUOnly for 2.03"
+      ]
+    }
+  },
+  "versionChanged": {
+    "detail": {
+      "versions": [
+        {
+          "name": "something",
+          "value": "1234"
+        }
+      ],
+      "peripherals": [
+        {
+          "name": "SamplePrinter",
+          "versions": [
+            {
+              "name": "PrinterFirmware",
+              "value": "v1.0.1"
+            },
+            {
+              "name": "PrinterSoftware",
+              "value": "v2.1"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "packageChanged": {
+    "detail": {
+      "packages": [
+        {
+          "packageId": "package_1.tar.gz",
+          "status": "accepted",
+          "statusDate": "2022-03-15T09:35:00+01:00",
+          "size": 12345
+        },
+        {
+          "packageId": "package_2.tar.gz",
+          "status": "accepted",
+          "statusDate": "2022-03-15T09:36:00+01:00",
+          "size": 587528
+        }
+      ]
+    }
+  }
+}

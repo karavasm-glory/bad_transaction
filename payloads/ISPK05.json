@@ -1,1 +1,120 @@
-
+{
+	"description": "DUMMY message. Must be fixed when real data will be available.",
+	"typeId": "ISPK05",
+	"moduleType": "Soft",
+	"connection": {
+		"detail": {
+			"connection": "Connected",
+			"ipAddress": "127.0.0.1",
+			"fileTransferProtocol": "ftps"
+		}
+	},
+	"established": {
+		"detail": {
+			"versions": [
+				{
+					"name": "something",
+					"value": "1234"
+				}
+			],
+			"peripherals": [],
+			"supportedMessages": {
+				"monitoring": [],
+				"assetManagement": [
+					"RetrieveLog.Trace",
+					"Reboot",
+					"SelfTest",
+					"DownloadPackage",
+					"Delete",
+					"DeleteAll",
+					"Install",
+					"Restart",
+					"RefreshEvents"
+				]
+			},
+			"description": "I'm an ISPK05",
+			"informations": [
+				{
+					"name": "CollectionUnitType",
+					"value": "Cassette"
+				},
+				{
+					"name": "SafeType",
+					"value": "UL"
+				},
+				{
+					"name": "BVType",
+					"value": "HVE-200"
+				}
+			]
+		}
+	},
+	"assetStatusUpdated": {
+		"detail": {
+			"status": "Good",
+			"errorCode": "UBA-0280",
+			"errorMsg": "ISP - Fatal Error",
+			"errorDate": "2025-11-11T08:03:28+02:00",
+			"peripherals": [
+				{
+					"name": "the name of the peripheral",
+					"status": "Good",
+					"errorCode": "",
+					"errorMsg": "",
+					"errorDate": ""
+				}
+			]
+		}
+	},
+	"inventoryChanged": {
+		"detail": {
+			"transactionId": "20180109121329E7082FC",
+			"processDate": "2021-04-17T19:53:37.760+02:00",
+			"deviceInformation": {
+				"deviceId": 987654,
+				"deviceType": "app",
+				"deviceName": "ISPK05"
+			},
+			"cashUnits": [],
+			"totalInventory": [],
+			"paymentableInventory": [],
+			"peripherals": []
+		}
+	},
+	"firmwareUpdated": {
+		"detail": {
+			"package": [
+				"04.35.08_FullPckg for 2.02"
+			]
+		}
+	},
+	"versionChanged": {
+		"detail": {
+			"versions": [
+				{
+					"name": "something",
+					"value": "1234"
+				}
+			],
+			"peripherals": []
+		}
+	},
+	"packageChanged": {
+		"detail": {
+			"packages": [
+				{
+					"packageId": "package_1.tar.gz",
+					"status": "accepted",
+					"statusDate": "2022-03-15T09:35:00+01:00",
+					"size": 12345
+				},
+				{
+					"packageId": "package_2.tar.gz",
+					"status": "accepted",
+					"statusDate": "2022-03-15T09:36:00+01:00",
+					"size": 587528
+				}
+			]
+		}
+	}
+}

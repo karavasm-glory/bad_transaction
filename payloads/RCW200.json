@@ -1,0 +1,516 @@
+{
+  "description": "Must be fixed when real data will be available.",
+  "typeId": "RCW200",
+  "moduleType": "Coin",
+  "connection": {
+    "detail": {
+      "connection": "Connected",
+      "ipAddress": "127.0.0.1",
+      "fileTransferProtocol": "ftps"
+    }
+  },
+  "established": {
+    "detail": {
+      "versions": [
+        {
+          "name": "CV_AP",
+          "value": "AA08A"
+        },
+        {
+          "name": "CV_COUNTRY",
+          "value": "02010000-01000000"
+        },
+        {
+          "name": "MAIN_AP",
+          "value": "A010"
+        },
+        {
+          "name": "SPEC_INFO",
+          "value": "00-010081"
+        }
+      ],
+      "peripherals": [
+        {
+          "name": "SamplePrinter",
+          "versions": [
+            {
+              "name": "PrinterFirmware",
+              "value": "v2.0.2"
+            },
+            {
+              "name": "PrinterHardware",
+              "value": "v8.3"
+            }
+          ]
+        }
+      ],
+      "supportedMessages": {
+        "monitoring": [
+          "AssetStatusUpdated",
+          "VerifyStatusUpdated",
+          "InventoryChanged"
+        ],
+        "assetManagement": [
+          "RetrieveLog.Trace",
+          "RetrieveLog.Business",
+          "Reboot",
+          "SelfTest",
+          "DownloadPackage",
+          "Delete",
+          "DeleteAll",
+          "Install",
+          "Restart",
+          "RefreshEvents"
+        ]
+      },
+      "description": "I'm a RCW200",
+      "informations": [
+        {
+          "name": "CollectionUnitType",
+          "value": "Cassette"
+        },
+        {
+          "name": "SafeType",
+          "value": "UL"
+        },
+        {
+          "name": "BVType",
+          "value": "HVE-200"
+        }
+      ]
+    }
+  },
+  "assetStatusUpdated": {
+    "detail": {
+      "status": "Good",
+      "errorCode": "0x0338",
+      "errorMsg": "Unexpected sensor blocking(PSB06P)",
+      "errorDate": "2025-11-11T08:03:28+02:00",
+      "peripherals": [
+        {
+          "name": "the name of the peripheral",
+          "status": "Error",
+          "errorCode": "A001",
+          "errorMsg": "Something happens in this Asset",
+          "errorDate": "2021-02-15T21:03:28+02:00"
+        }
+      ],
+      "capabilities": {
+        "deposit": "available",
+        "dispense": "available",
+        "count": "available"
+      }
+    }
+  },
+  "partsStatusUpdated": {
+    "detail": {
+      "parts": [
+        {
+          "category": "door",
+          "items": [
+            {
+              "name": "GARAGE_DOOR",
+              "state": "closed"
+            },
+            {
+              "name": "DISPENSE_UNIT",
+              "state": "closed"
+            },
+            {
+              "name": "UPPER_COVER",
+              "state": "closed"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "inventoryChanged": {
+    "detail": {
+      "transactionId": "20180109121329E7082FC",
+      "processDate": "2021-04-17T19:53:37.760+02:00",
+      "deviceInformation": {
+        "deviceId": 987654,
+        "deviceType": "coin",
+        "deviceName": "RCW200"
+      },
+      "cashUnits": [
+        {
+          "capacity": 150,
+          "denominations": [
+            {
+              "count": 10,
+              "currencyCode": "EUR",
+              "faceValue": "2",
+              "revision": 0
+            }
+          ],
+          "nearEmpty": 15,
+          "nearFull": 135,
+          "status": "empty",
+          "unit": "Stacker1"
+        },
+        {
+          "capacity": 150,
+          "denominations": [],
+          "nearEmpty": 15,
+          "nearFull": 135,
+          "status": "empty",
+          "unit": "Stacker2"
+        },
+        {
+          "capacity": 150,
+          "denominations": [
+            {
+              "count": 30,
+              "currencyCode": "EUR",
+              "faceValue": "0.1",
+              "revision": 0
+            }
+          ],
+          "nearEmpty": 20,
+          "nearFull": 180,
+          "status": "empty",
+          "unit": "Stacker3"
+        },
+        {
+          "capacity": 150,
+          "denominations": [
+            {
+              "count": 40,
+              "currencyCode": "EUR",
+              "faceValue": "0.01",
+              "revision": 0
+            }
+          ],
+          "nearEmpty": 35,
+          "nearFull": 315,
+          "status": "empty",
+          "unit": "Stacker4"
+        },
+        {
+          "capacity": 150,
+          "denominations": [
+            {
+              "count": 123,
+              "currencyCode": "EUR",
+              "faceValue": "1",
+              "revision": 0
+            }
+          ],
+          "nearEmpty": 15,
+          "nearFull": 135,
+          "status": "empty",
+          "unit": "Stacker5"
+        },
+        {
+          "capacity": 150,
+          "denominations": [
+            {
+              "count": 150,
+              "currencyCode": "EUR",
+              "faceValue": "0.2",
+              "revision": 0
+            }
+          ],
+          "nearEmpty": 15,
+          "nearFull": 135,
+          "status": "empty",
+          "unit": "Stacker6"
+        },
+        {
+          "capacity": 150,
+          "denominations": [
+            {
+              "count": 135,
+              "currencyCode": "EUR",
+              "faceValue": "0.05",
+              "revision": 0
+            }
+          ],
+          "nearEmpty": 15,
+          "nearFull": 135,
+          "status": "empty",
+          "unit": "Stacker7"
+        },
+        {
+          "capacity": 150,
+          "denominations": [],
+          "nearEmpty": 15,
+          "nearFull": 135,
+          "status": "notAvailable",
+          "unit": "Stacker8"
+        },
+        {
+          "capacity": 150,
+          "denominations": [],
+          "nearEmpty": 15,
+          "nearFull": 135,
+          "status": "empty",
+          "unit": "MixedStacker1"
+        },
+        {
+          "capacity": 150,
+          "denominations": [
+            {
+              "count": 80,
+              "currencyCode": "EUR",
+              "faceValue": "0.5",
+              "revision": 0
+            },
+            {
+              "count": 60,
+              "currencyCode": "EUR",
+              "faceValue": "1.0",
+              "revision": 0
+            }
+          ],
+          "nearEmpty": 15,
+          "nearFull": 135,
+          "status": "empty",
+          "unit": "MixedStacker2"
+        },
+        {
+          "capacity": 150,
+          "denominations": [],
+          "nearEmpty": 15,
+          "nearFull": 135,
+          "status": "empty",
+          "unit": "MixedStacker3"
+        },
+        {
+          "capacity": 150,
+          "denominations": [],
+          "nearEmpty": 15,
+          "nearFull": 135,
+          "status": "empty",
+          "unit": "MixedStacker4"
+        },
+        {
+          "capacity": 150,
+          "denominations": [],
+          "nearEmpty": 15,
+          "nearFull": 135,
+          "status": "empty",
+          "unit": "MixedStacker5"
+        },
+        {
+          "capacity": 150,
+          "denominations": [],
+          "nearEmpty": 15,
+          "nearFull": 135,
+          "status": "empty",
+          "unit": "MixedStacker6"
+        },
+        {
+          "capacity": 150,
+          "denominations": [],
+          "nearEmpty": 15,
+          "nearFull": 135,
+          "status": "empty",
+          "unit": "MixedStacker7"
+        },
+        {
+          "capacity": 150,
+          "denominations": [
+            {
+              "count": 48,
+              "currencyCode": "CHF",
+              "faceValue": "0.1",
+              "revision": 0
+            },
+            {
+              "count": 10,
+              "currencyCode": "CHF",
+              "faceValue": "0.2",
+              "revision": 0
+            }
+          ],
+          "nearEmpty": 15,
+          "nearFull": 135,
+          "status": "empty",
+          "unit": "MixedStacker8"
+        },
+        {
+          "capacity": 1800,
+          "denominations": [
+            {
+              "count": 1,
+              "currencyCode": "EUR",
+              "faceValue": "0.01",
+              "revision": 0
+            },
+            {
+              "count": 2,
+              "currencyCode": "EUR",
+              "faceValue": "0.02",
+              "revision": 0
+            },
+            {
+              "count": 3,
+              "currencyCode": "EUR",
+              "faceValue": "0.05",
+              "revision": 0
+            },
+            {
+              "count": 4,
+              "currencyCode": "EUR",
+              "faceValue": "0.1",
+              "revision": 0
+            },
+            {
+              "count": 20,
+              "currencyCode": "EUR",
+              "faceValue": "0.2",
+              "revision": 0
+            },
+            {
+              "count": 12,
+              "currencyCode": "EUR",
+              "faceValue": "0.5",
+              "revision": 0
+            },
+            {
+              "count": 158,
+              "currencyCode": "EUR",
+              "faceValue": "1",
+              "revision": 0
+            },
+            {
+              "count": 37,
+              "currencyCode": "EUR",
+              "faceValue": "2",
+              "revision": 0
+            }
+          ],
+          "nearEmpty": 180,
+          "nearFull": 1620,
+          "status": "empty",
+          "unit": "OverflowBox"
+        },
+        {
+          "capacity": 1000,
+          "denominations": [
+            {
+              "count": 45,
+              "currencyCode": "EUR",
+              "faceValue": "0.01",
+              "revision": 0
+            },
+            {
+              "count": 54,
+              "currencyCode": "EUR",
+              "faceValue": "0.02",
+              "revision": 0
+            },
+            {
+              "count": 55,
+              "currencyCode": "EUR",
+              "faceValue": "0.05",
+              "revision": 0
+            },
+            {
+              "count": 0,
+              "currencyCode": "EUR",
+              "faceValue": "0.1",
+              "revision": 0
+            },
+            {
+              "count": 67,
+              "currencyCode": "EUR",
+              "faceValue": "0.2",
+              "revision": 0
+            },
+            {
+              "count": 3,
+              "currencyCode": "EUR",
+              "faceValue": "0.5",
+              "revision": 0
+            },
+            {
+              "count": 3,
+              "currencyCode": "EUR",
+              "faceValue": "1",
+              "revision": 0
+            },
+            {
+              "count": 278,
+              "currencyCode": "EUR",
+              "faceValue": "2",
+              "revision": 0
+            }
+          ],
+          "nearEmpty": 100,
+          "nearFull": 900,
+          "status": "empty",
+          "unit": "CaptureBin"
+        }
+      ],
+      "totalInventory": [],
+      "paymentableInventory": [],
+      "peripherals": []
+    }
+  },
+  "firmwareUpdated": {
+    "detail": {
+      "package": [
+        "01.23.45_XXX for 2.03"
+      ]
+    }
+  },
+  "versionChanged": {
+    "detail": {
+      "versions": [
+        {
+          "name": "CV_AP",
+          "value": "AA08A"
+        },
+        {
+          "name": "CV_COUNTRY",
+          "value": "02010000-01000000"
+        },
+        {
+          "name": "MAIN_AP",
+          "value": "A010"
+        },
+        {
+          "name": "SPEC_INFO",
+          "value": "00-010081"
+        }
+      ]
+    },
+    "peripherals": [
+      {
+        "name": "SamplePrinter",
+        "versions": [
+          {
+            "name": "PrinterFirmware",
+            "value": "v2.0.2"
+          },
+          {
+            "name": "PrinterHardware",
+            "value": "v8.3"
+          }
+        ]
+      }
+    ]
+  },
+  "packageChanged": {
+    "detail": {
+      "packages": [
+        {
+          "packageId": "package_1.tar.gz",
+          "status": "accepted",
+          "statusDate": "2022-03-15T09:35:00+01:00",
+          "size": 12345
+        },
+        {
+          "packageId": "package_2.tar.gz",
+          "status": "accepted",
+          "statusDate": "2022-03-15T09:36:00+01:00",
+          "size": 587528
+        }
+      ]
+    }
+  }
+}
